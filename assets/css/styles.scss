@@ -1,0 +1,623 @@
+--- 
+---
+/* this is for test only delete this line if not */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// section {
+//     flex: 1 0 auto;
+// }
+
+// footer {
+//     flex-shrink: 0;
+// }
+
+/* RESET CSS BEGINS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
+
+::-ms-scrollbar {
+    display: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    height: 0;
+}
+
+/* RESET CSS END */
+
+
+
+/* HELPER CLASS */
+
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* HELPER CLASSES ENDS */
+
+/* GENERAL RULES */
+
+
+@font-face {
+    font-family: 'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('Opentype');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'HelveticaNeue-Thin';
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+
+/* LANDING PAGE BEGINS HERE */
+#lp {
+    background-image: url(../img/hero-bg.png);
+    background-image: linear-gradient(rgba(252, 53, 53, 0.6), rgba(252, 53, 53, 0.6)), url(../img/hero-bg.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    flex-basis: 100%;
+}
+
+header {
+    width: 100%;
+    // background-color: #FB7C7C;
+    background-color: #FA7979;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+}
+
+header .logo-main {
+    height: 45px;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.navbar {
+    width: 60%;
+    text-align: right;
+}
+
+
+header ul li {
+    margin-bottom: 0;
+    height: 70px;
+    line-height: 70px;
+    width: 15%;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    text-align: center;
+    border-bottom: transparent 6px;
+    transition: border-bottom 0.2s, color 0.2s;
+    font-size: 13px;
+}
+
+
+header ul li:hover {
+    background: #8f3b3b;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.cta {
+    display: inline-block;
+    margin-top: 110px;
+}
+
+.cta-info {
+    float: left;
+    width: 50%;
+    margin: 25px 0 0 0;
+}
+
+.cta-img {
+    float: right;
+    width: 50%;
+    margin-right: -130px;
+}
+
+.iphone {
+    width: 85%;
+    margin-bottom: -240px;
+
+}
+
+#lp h1.cta-bold {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+#lp p.cta-para {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 200;
+    color: white;
+    width: 58%;
+    margin: 40px 0;
+    margin-bottom: 55px;
+}
+
+
+.btn-download {
+    color: white;
+    background-color: #282828;
+    padding: 23px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.phone-icon {
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+/* LP SECTION END */
+
+
+/* FEATURE SECTION BEGIN */
+
+#features {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.features-heading {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.features-para {
+    width: 75%;
+    margin: 0 auto;
+    color: grey;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.col-4-app {
+    width: 33.33%;
+    float: left;
+}
+
+.features-info-head {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.features-info-para {
+    color: gray;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 0 30px;
+    font-size: 21px;
+}
+
+
+/* FEATURES SECTION END */
+
+/* NOSE SECTION */
+
+#nose {
+    flex-basis: 100%;
+    background-image: url(../img/nose-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nose-content {
+    width: auto;
+    padding: 200px 0 200px 0;
+}
+
+.nose-heading {
+    width: 58%;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: bold;
+    text-align: left;
+    color: #fc3a3a;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.white-words {
+    color: white;
+}
+
+.nose-para {
+    width: 33%;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: bold;
+    color: grey;
+    margin: 20px 0 92px 30px;
+}
+
+.nose-btn {
+    margin-left: 50px;
+    background-color: #fc3a3a;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+/* Nose Ends */
+
+
+/* section social media starts here */
+
+.social-media {
+    flex-basis: 100%;
+    color: #dcdce0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.social-media-post {
+    background-color: #1e1d29;
+}
+
+
+.social-media .social-media-post .logo {
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.post-social {
+    margin-left: 50px;
+    overflow: auto; 
+}
+
+.post-social-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.image-user {
+    float: left;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.post-wrapper {
+    overflow: hidden;
+    margin: 10px 0 20px;
+}
+
+.post-user {
+    width: 60%;
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: normal;
+    padding-top: 5px;
+}
+
+.twitter-posts {
+    width: 55%;
+}
+
+.user {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-top: 20px;
+}
+
+.timestamp {
+    font-family: 'HelveticaNeue-Thin';
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.post {
+    font-size: 13px;
+}
+
+.fol-us {
+    font-size: 12px;
+}
+
+
+.abt-info {
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'HelveticaNeue-Thin';
+    font-weight: lighter;
+    width: 60%;
+}
+
+
+/* section social media ends here */
+
+
+/* footer starts here */
+
+footer {
+    width: 100%;
+    display: block;
+}
+
+.co-right-para {
+    text-align: center;
+    display: block;
+    margin: 20px 10px 17px 15px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.soc-ic {
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+/* footer ends here */
+
+
+
+/* Blog starts here */
+
+#blog {
+    flex-basis: 20%;
+    padding: 100px 15px;
+    background-color: #8f3b3b;
+    height: 100vh;
+}
+
+#blog ul {
+    padding: 20px 0;
+}
+
+#blog ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.blog-post {
+    flex-basis: 48.5%;
+    padding: 100px 200px;
+    background-color: pink;
+    height:100vh;
+}
+
+.blog-post h1 {
+    padding: 20px 0;
+}
