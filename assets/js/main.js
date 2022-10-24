@@ -1,7 +1,7 @@
 
 
 $("#blog").ready(function() {
-    $('.blog-container').load("/2022/10/21/my-first-jekyll-blog.html #default");
+    $('.blog-container').load("/2022/10/21/my-first-jekyll-blog.html");
     $('.blog-anchors').click(function(event) {
         event.preventDefault();
         $('.blog-container').empty();
